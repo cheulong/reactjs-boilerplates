@@ -17,12 +17,12 @@ const UserDetail: FC = () => {
 
   return (
     <>
-      <button type='button' onClick={handleClick}>
+      <button data-testid='goHomeBtn' type='button' onClick={handleClick}>
         Go home
       </button>
       <div className='userDetail-container'>
         <p>{userDetail[0].id}</p>
-        <p>First Name: {userDetail[0].firstName}</p>
+        <p data-testid='firstName'>First Name: {userDetail[0].firstName}</p>
         <p>Last Name: {userDetail[0].lastName}</p>
         <p>Age: {userDetail[0].age}</p>
       </div>
