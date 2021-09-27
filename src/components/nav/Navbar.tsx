@@ -20,6 +20,11 @@ const Navbar: FC = () => (
           <p>Users</p>
         </li>
       </Link>
+      <Link to='/userApi'>
+        <li>
+          <p>Users Api</p>
+        </li>
+      </Link>
     </ul>
   </div>
 );
