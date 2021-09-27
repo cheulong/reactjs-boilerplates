@@ -19,39 +19,24 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint"
-  ],
+  "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": [
-      "error"
-    ],
+    "@typescript-eslint/no-use-before-define": ["error"],
     "linebreak-style": "off",
     "jsx-quotes": "off",
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-curly-newline": "off",
-    "@typescript-eslint/comma-dangle": [
-      "off"
-    ],
-    "arrow-body-style": [
-      "warn",
-      "as-needed"
-    ],
+    "@typescript-eslint/comma-dangle": ["off"],
+    "arrow-body-style": ["warn", "as-needed"],
     "object-curly-newline": "off",
     "implicit-arrow-linebreak": "off"
   },
   "overrides": [
     {
-      "files": [
-        "*.ts",
-        "*.tsx"
-      ],
+      "files": ["*.ts", "*.tsx"],
       "rules": {
-        "@typescript-eslint/explicit-module-boundary-types": [
-          "off"
-        ]
+        "@typescript-eslint/explicit-module-boundary-types": ["off"]
       }
     }
   ]
