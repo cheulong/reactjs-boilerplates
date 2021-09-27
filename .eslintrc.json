@@ -26,8 +26,17 @@
     "linebreak-style": "off",
     "jsx-quotes": "off",
     "react/jsx-one-expression-per-line": "off",
+    "react/jsx-curly-newline": "off",
     "@typescript-eslint/comma-dangle": ["off"],
     "arrow-body-style": ["warn", "as-needed"],
     "object-curly-newline": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": ["off"]
+      }
+    }
+  ]
 }
